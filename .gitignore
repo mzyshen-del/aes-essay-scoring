@@ -1,0 +1,6 @@
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+.env
+part1_predictions.csv
+ELLIPSE_Final_github_*.csv

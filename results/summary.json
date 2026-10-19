@@ -1,0 +1,20 @@
+{
+  "dataset": "ELLIPSE public train/test split; data files are not redistributed here",
+  "train_size": 3911,
+  "test_size": 2571,
+  "feature_model": {
+    "variant": "LR-expanded",
+    "pearson_r": 0.4996,
+    "mse": 0.2918,
+    "evaluation_split": "official_test"
+  },
+  "llm_model": {
+    "model": "deepseek/deepseek-v3.2",
+    "prompt": "P1_direct_holistic",
+    "temperature": 0.2,
+    "pearson_r": 0.6616,
+    "mse": 0.4125,
+    "sample_size": 60
+  },
+  "llm_conditions_tested": 12
+}
