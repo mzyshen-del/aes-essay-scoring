@@ -19,7 +19,9 @@ The two rows use different evaluation sizes. The metrics should not be interpret
 
 ## Run
 
-Open the notebook in Python 3 and run cells in order. It downloads the public ELLIPSE train and test CSVs from the corpus repository. The LLM section uses OpenRouter and needs an `OPENROUTER_API_KEY`; running it can incur API charges. The notebook is provided with outputs cleared and has not been rerun as part of this public packaging.
+Open the notebook in Python 3 and run cells in order. It downloads the public training CSV, the password-protected test ZIP, and `ELL_Rubrics.docx` directly from the [corpus authors' repository](https://github.com/scrosseye/ELLIPSE-Corpus). The ZIP password is published in that repository's README. The notebook checks SHA-256 hashes before using these files, then extracts the test CSV in memory. No corpus file or rubric is committed here.
+
+The ELLIPSE authors publish the data under [CC BY-NC-SA 4.0](https://github.com/scrosseye/ELLIPSE-Corpus#readme). Review that license for your intended use. The LLM section uses OpenRouter and needs an `OPENROUTER_API_KEY`; running it can incur API charges. Saved notebook outputs are cleared. The asset-loading cells were verified independently from a clean working directory; the full paid LLM experiment has not been rerun for this public packaging.
 
 ## Scope
 
