@@ -8,6 +8,31 @@
     "mse": 0.2918,
     "evaluation_split": "official_test"
   },
+  "matched_60_essay_subset": {
+    "source": "60 selected essays from the official test split; metrics recomputed from saved final predictions",
+    "selection_note": "The LLM condition was selected on this same subset; results are exploratory.",
+    "lr_basic": {
+      "pearson_r": 0.45328,
+      "mse": 0.283784,
+      "mae": 0.434605,
+      "mean_error": -0.002688
+    },
+    "lr_expanded": {
+      "pearson_r": 0.512253,
+      "mse": 0.263124,
+      "mae": 0.414399,
+      "mean_error": -0.005209
+    },
+    "selected_llm": {
+      "pearson_r": 0.661628,
+      "mse": 0.4125,
+      "mae": 0.525,
+      "mean_error": -0.458333,
+      "below_human": 43,
+      "equal_to_human": 13,
+      "above_human": 4
+    }
+  },
   "llm_model": {
     "model": "deepseek/deepseek-v3.2",
     "prompt": "P1_direct_holistic",
@@ -16,5 +41,115 @@
     "mse": 0.4125,
     "sample_size": 60
   },
-  "llm_conditions_tested": 12
+  "llm_conditions_tested": 12,
+  "llm_conditions": [
+    {
+      "model_id": "deepseek/deepseek-v3.2",
+      "prompt_key": "P1_direct_holistic",
+      "temperature": 0.2,
+      "successful_count": 60,
+      "num_failed": 0,
+      "pearson_r": 0.6616279000257825,
+      "mse": 0.4125
+    },
+    {
+      "model_id": "deepseek/deepseek-v3.2",
+      "prompt_key": "P2_analytic_to_holistic",
+      "temperature": 0.2,
+      "successful_count": 60,
+      "num_failed": 0,
+      "pearson_r": 0.6229729629095307,
+      "mse": 0.3625
+    },
+    {
+      "model_id": "deepseek/deepseek-v3.2",
+      "prompt_key": "P1_direct_holistic",
+      "temperature": 0.0,
+      "successful_count": 60,
+      "num_failed": 0,
+      "pearson_r": 0.6052047069262444,
+      "mse": 0.4375
+    },
+    {
+      "model_id": "deepseek/deepseek-v3.2",
+      "prompt_key": "P2_analytic_to_holistic",
+      "temperature": 0.0,
+      "successful_count": 60,
+      "num_failed": 0,
+      "pearson_r": 0.5547505463985387,
+      "mse": 0.4166666666666667
+    },
+    {
+      "model_id": "google/gemma-3-27b-it",
+      "prompt_key": "P1_direct_holistic",
+      "temperature": 0.2,
+      "successful_count": 60,
+      "num_failed": 0,
+      "pearson_r": 0.5297891018490936,
+      "mse": 0.2708333333333333
+    },
+    {
+      "model_id": "google/gemma-3-27b-it",
+      "prompt_key": "P1_direct_holistic",
+      "temperature": 0.0,
+      "successful_count": 60,
+      "num_failed": 0,
+      "pearson_r": 0.5128314615785858,
+      "mse": 0.2791666666666667
+    },
+    {
+      "model_id": "mistralai/mistral-small-3.1-24b-instruct",
+      "prompt_key": "P1_direct_holistic",
+      "temperature": 0.0,
+      "successful_count": 60,
+      "num_failed": 0,
+      "pearson_r": 0.4580630530604845,
+      "mse": 0.3875
+    },
+    {
+      "model_id": "google/gemma-3-27b-it",
+      "prompt_key": "P2_analytic_to_holistic",
+      "temperature": 0.0,
+      "successful_count": 60,
+      "num_failed": 0,
+      "pearson_r": 0.44118017024268785,
+      "mse": 0.2875
+    },
+    {
+      "model_id": "mistralai/mistral-small-3.1-24b-instruct",
+      "prompt_key": "P1_direct_holistic",
+      "temperature": 0.2,
+      "successful_count": 60,
+      "num_failed": 0,
+      "pearson_r": 0.4045485061116729,
+      "mse": 0.4
+    },
+    {
+      "model_id": "mistralai/mistral-small-3.1-24b-instruct",
+      "prompt_key": "P2_analytic_to_holistic",
+      "temperature": 0.0,
+      "successful_count": 60,
+      "num_failed": 0,
+      "pearson_r": 0.3909590258627204,
+      "mse": 0.36666666666666664
+    },
+    {
+      "model_id": "mistralai/mistral-small-3.1-24b-instruct",
+      "prompt_key": "P2_analytic_to_holistic",
+      "temperature": 0.2,
+      "successful_count": 60,
+      "num_failed": 0,
+      "pearson_r": 0.3909590258627204,
+      "mse": 0.36666666666666664
+    },
+    {
+      "model_id": "google/gemma-3-27b-it",
+      "prompt_key": "P2_analytic_to_holistic",
+      "temperature": 0.2,
+      "successful_count": 60,
+      "num_failed": 0,
+      "pearson_r": 0.3747913304607218,
+      "mse": 0.30833333333333335
+    }
+  ]
 }

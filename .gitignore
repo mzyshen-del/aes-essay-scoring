@@ -1,6 +1,9 @@
-.ipynb_checkpoints/
+outputs/
 __pycache__/
 *.pyc
 .env
+.venv/
+.ipynb_checkpoints/
 part1_predictions.csv
+part1_config.json
 ELLIPSE_Final_github_*.csv
