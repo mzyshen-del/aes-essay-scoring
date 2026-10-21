@@ -63,6 +63,8 @@ Open [`notebooks/aes_part1.ipynb`](notebooks/aes_part1.ipynb) in a Python notebo
 
 ## Data and use
 
+The repository's original code and documentation are released under the [MIT License](LICENSE). This does not grant rights to the ELLIPSE corpus, rubric, essay texts, or other third-party material; use those under their respective source terms.
+
 The notebook downloads the public training CSV, password-protected test ZIP, and `ELL_Rubrics.docx` directly from the [corpus authors' repository](https://github.com/scrosseye/ELLIPSE-Corpus). The ZIP password is published in that repository's README. SHA-256 hashes are checked before use. No corpus file or rubric is committed here.
 
 The ELLIPSE authors publish the data under [CC BY-NC-SA 4.0](https://github.com/scrosseye/ELLIPSE-Corpus#readme). Review that license for your intended use. The LLM section uses OpenRouter and needs an `OPENROUTER_API_KEY`; running it can incur API charges. Saved notebook outputs are cleared. The asset-loading cells were verified independently from a clean working directory; the full paid LLM experiment has not been rerun for this public packaging.
