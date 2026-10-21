@@ -2,6 +2,10 @@
 
 This is a curated public version of a course research project. I completed Part 1 independently: data audit, feature baselines, LLM experiments, evaluation, and analysis. The notebook compares baselines, two linear regression feature sets, and 12 LLM scoring conditions on the public [ELLIPSE Corpus](https://github.com/scrosseye/ELLIPSE-Corpus). The original essay CSV files and row-level predictions are not redistributed here.
 
+## Product decision case study (Chinese)
+
+I used the full official test set to establish reproducible feature-model baselines, then compared the LLM and feature models on the same 60 essays. The selected LLM condition had higher correlation but larger absolute error and a systematic low-score bias; I therefore did not treat it as ready for unsupervised high-stakes scoring. My experiment design, decision criteria, evidence and limitations are explained in the [case study](docs/case-study.md).
+
 ## Contents
 
 - [`notebooks/aes_part1.ipynb`](notebooks/aes_part1.ipynb): analysis and experiment code. Saved outputs were removed because some displayed essay text.
